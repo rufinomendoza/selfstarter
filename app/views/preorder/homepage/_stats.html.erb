@@ -1,17 +1,13 @@
 <div class="wrapper clearfix">
   <div id="video">
-    <iframe width='512' height='385' src="<%= video_url %>"></iframe>
+    <img width='100%' height='100%' src="/assets/tie.jpg"></img>
   </div>
 
   <div id="backing">
     <ul>
-      <li class="stats" id="backers">
-        <%= number_with_delimiter Order.current, :delimiter => "," %>
-        <span><%= Settings.primary_stat %></span>
-      </li>
       <li class="stats">
-        <%= number_to_currency Order.revenue, :precision => 0 %>
-        <span>of <%= number_to_currency Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 %></span>
+        <%= number_with_delimiter Order.current, :delimiter => "," %>
+        <span>of <%= number_with_delimiter Settings.project_goal, :delimiter => ","%> neckties</span>
       </li>
 
       <% if Settings.expiration_date.present? %>
