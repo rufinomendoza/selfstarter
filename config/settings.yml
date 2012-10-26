@@ -10,7 +10,7 @@ project_goal: 100
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "GPS Neckties"
+product_name: "GPS Necktie"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
@@ -20,7 +20,7 @@ product_image_path: "tie.jpg"
 value_proposition: "An Improvement for Your Neck"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
-video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
+video_embed_url: "https://www.youtube.com/v/WD9XVpaRcZU"
 
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
@@ -54,7 +54,7 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships:  				"Ships March 2012...in time for the Spring Conference"
+ships:  				"Ships March 2013…in time for the Spring Conference"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"
