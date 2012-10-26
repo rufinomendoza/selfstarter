@@ -59,10 +59,10 @@ ships:  				"Ships March 2012...in time for the Spring Conference"
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: 		"It costs money!"					
+price_human: 		"It costs $100!"					
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
+dont_give_them_a_reason_to_say_no: "We'll charge you when it ships."
 
 # Social Stuff
 facebook_app_id: "1234567890"
