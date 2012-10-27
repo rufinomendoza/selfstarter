@@ -1,0 +1,41 @@
+<div class="gray_background">
+  <h3>Order Table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>User ID</th>
+        <th>Price</th>
+        <th>Order Number</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Status</th>
+        <th>Zip</th>
+        <th>Phone</th>
+        <th>Country</th>
+        <th>Expiration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= order.name %></td>
+          <td><%= number_with_delimiter order.user_id, :delimiter => "," %></td>
+          <td><%= number_to_currency order.price, :precision => 0 %></td>
+          <td><%= number_with_delimiter order.number, :delimiter => "," %></td>
+          <td><%= order.address_one %></td>
+          <td><%= order.address_two %></td>
+          <td><%= order.city %></td>
+          <td><%= order.state %></td>
+          <td><%= order.status %></td>
+          <td><%= order.zip %></td>
+          <td><%= order.phone %></td>
+          <td><%= order.country %></td>
+          <td><%= order.expiration %></td> 
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

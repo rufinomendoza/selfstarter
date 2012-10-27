@@ -43,6 +43,9 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-collapse: separate;
+	border-spacing: 12px;
+}
+th {
+	font-weight: bold;
 }
