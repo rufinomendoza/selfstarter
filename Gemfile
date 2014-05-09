@@ -9,6 +9,7 @@ group :development do
 end
 
 group :production do
+  ruby '2.0.0'
   gem 'thin'
   gem 'pg'
 end
