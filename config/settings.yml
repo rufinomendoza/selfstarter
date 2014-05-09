@@ -22,6 +22,14 @@ value_proposition: "An Improvement for Your Neck"
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
 video_embed_url: "https://www.youtube.com/v/WD9XVpaRcZU"
 
+# If set to true, then the image at "/assets/video_placeholder.png" will be shown in place of the youtube
+# video.  When the user clicks it, the vid will replace the image and start playing.
+#
+# NOTE: you can set this to false, and no image will be use - first frame of the video will be displayed
+#
+# NOTE: this only works for youtube video at the moment.  If its not for youtube, then just leave this property blank
+use_video_placeholder: true
+
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
@@ -29,7 +37,12 @@ amazon_access_key: "YOUR_AMAZON_ACCESS_KEY"
 amazon_secret_key: "YOUR_AMAZON_SECRET_KEY"
 price: 	100
 
-payment_description: "Get your neck in shape with GPS ties!"
+# if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
+# There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
+# put code in seeds.rb, then run rake db:seed
+use_payment_options: false
+
+payment_description: "You really should change this text because people will see it on Amazon's order page!!!!!"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
@@ -39,14 +52,14 @@ charge_limit: 115.00
 
 # On Lockitron, it's "backers"
 primary_stat: "backers"
-# This'll show up in the tweet as, "I'm forker number ..."
+# This'll show up in the tweet as, "I'm backer number ..."
 primary_stat_verb: 'backer'
 
 # The 2nd call to action button, towards the middle-ish of the page
 middle_reserve_text: "Reserve Now"
 
 # When the project should end
-expiration_date: <%= DateTime.new(2013,2,28) %>
+expiration_date: <%= DateTime.now + 29 %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
 progress_text: "Implemented"
@@ -54,7 +67,7 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships:  				"Ships March 2013…in time for the Spring Conference"
+ships: "Ships...sometime"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"

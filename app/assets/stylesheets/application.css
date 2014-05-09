@@ -11,4 +11,15 @@
  *= require_self
  *= require reset
  *= require main
+ *= require jquery.ui.all
  */
+.hidden
+{
+  display: none;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
