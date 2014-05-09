@@ -46,7 +46,7 @@ payment_description: "You really should change this text because people will see
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
-charge_limit: 115.00
+charge_limit: 125.00
 
 # Stats settings
 
@@ -67,7 +67,7 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Ships...sometime"
+ships: "Ships in time for the Summer Conference"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"
@@ -81,7 +81,7 @@ dont_give_them_a_reason_to_say_no: "We'll charge you when it ships."
 facebook_app_id: "1234567890"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
-tweet_text: "to crowdfund"
+tweet_text: "to look stylish investor"
 
 # Google Analytics
 google_id: "1234567890"
